@@ -1,7 +1,14 @@
+## Imágenes del proyecto:
+
+<img src ="https://media.discordapp.net/attachments/755272076977242193/1116516020828504214/img2.png?width=839&height=375" />
+<img src ="https://media.discordapp.net/attachments/755272076977242193/1116516021281505300/img1.png?width=837&height=374" />
+<img src ="https://media.discordapp.net/attachments/755272076977242193/1116516020513939456/img3.png?width=841&height=375" />
+
+
 Implementar catálogo de productos con 
 FILTROS COMBINADOS en el backend
 
-## Requisitos:
+Requisitos:
 
 1. Utilizar el archivo .json adjunto como base de datos.
 
