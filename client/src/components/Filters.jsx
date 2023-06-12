@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import '../components/styles/Filters.css';
+import PropTypes from 'prop-types';
 
 const categoryOptions = [
   'cell_phone',
@@ -38,12 +39,6 @@ function Filters({ onApplyFilters, handleResetFilters }) {
       }
       setMaxPriceFilter(filteredValue);
     }
-    /*   const { name, value } = event.target;
-    if (name === 'minPrice') {
-      setMinPriceFilter(value);
-    } else if (name === 'maxPrice') {
-      setMaxPriceFilter(value);
-    } */
   };
 
   const handleConditionChange = (event) => {
@@ -143,5 +138,10 @@ function Filters({ onApplyFilters, handleResetFilters }) {
     </div>
   );
 }
+
+Filters.propTypes = {
+  onApplyFilters: PropTypes.func.isRequired,
+  handleResetFilters: PropTypes.func.isRequired,
+};
 
 export default Filters;

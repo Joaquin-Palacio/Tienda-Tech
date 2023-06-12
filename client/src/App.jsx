@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import ProductList from './components/ProductList'
+import PropTypes from 'prop-types';
+import ProductList from './components/ProductList';
 import SideBar from './components/Sidebar';
-
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -47,5 +47,10 @@ function App() {
     </div>
   );
 }
+
+App.propTypes = {
+  handleApplyFilters: PropTypes.func.isRequired,
+  handleResetFilters: PropTypes.func.isRequired,
+};
 
 export default App;
